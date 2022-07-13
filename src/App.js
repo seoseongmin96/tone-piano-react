@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import React, {useState} from 'react';
 import {
   playC4,
   playDb4,
@@ -33,12 +33,33 @@ import {
 
 window.addEventListener("keydown",PlayNote);
 function App(){
- 
+  const [inputs, setInputs] =useState({})
+  const{username, password} = inputs;
+
+  const handleChange = (e) =>{
+      e.preventDefault()
+      const{value, name} = e.target;
+      setInputs({...inputs,[name]: value})
+  }
+
+  const clickC4 =(e)=>{
+      e.preventDefault()
+      
+      const C4 = playC4()
+      alert(`클릭되는 음 : ${C4}`)
+  }
+
+  const clickDb4 =(e)=>{
+    e.preventDefault()
+    
+    const Db4 = playDb4()
+    alert(`클릭되는 음 : ${Db4}`)
+}
     return(<div className='pianoPage'>
     <h1>Enjoy playing on the Tone Piano!</h1> <br/> <br/> <br/> <br/>
     <div className='piano'>
-    <div className='white-key' onClick={playC4}>A</div>
-    <div className='black-key' onClick={playDb4}>W</div>
+    <div className='white-key' onClick={clickC4}>A</div>
+    <div className='black-key' onClick={clickDb4}>W</div>
     <div className='white-key' onClick={playD4}>S</div>
     <div className='black-key' onClick={playEb4}>E</div>
     <div className='white-key' onClick={playE4}>D</div>

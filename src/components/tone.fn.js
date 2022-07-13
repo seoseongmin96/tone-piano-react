@@ -1,15 +1,39 @@
 import * as Tone from "tone"
 
-export function playC4(keycode){
+
+export default function MyTone(){
+    
+    return <><h1>로그인폼</h1>
+    <form>
+  
+    <div>
+    <label><b>Username</b></label>
+    <input type="text" name='username' onChange={handleChange} /><br />
+
+    <label htmlFor=""><b>Password</b></label>
+    <input type="text" name='password' onChange={handleChange}/><br />
+
+    <button onClick={handleClick}>Login</button><br />
+    <label><input type="checkbox" />Remember me</label><br />
+    
+    
+    </div>
+    <div>
+    <button>Cancel</button><br />
+    <span>Forgot <a>password?</a></span>
+    </div>
+    </form>
+    </>
+    
+}
+export function playC4(){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C4","8n");
-   return keycode
     }
 
-export function playDb4(keycode){
+export function playDb4(){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Db4","8n");
-    return keycode
     }
     
 export function playD4(){
@@ -39,9 +63,9 @@ export function playGb4(){
     
 export function playG4(){
     const synth = new Tone.Synth().toDestination();
-    
+    alert("솔 누름 1")
     synth.triggerAttackRelease("G4","8n");
-    
+    alert("솔 누름 2")
     } 
     
 export function playAb4(){
@@ -131,13 +155,10 @@ export function playC6(){
 
 export function PlayNote(event){
     if(event.keyCode ===65){
-        alert('도')
-        playC4("A");
-
+        playC4();
     }
     if(event.keyCode ===87){
-        alert('레b')
-        playDb4("W");
+        playDb4();
     }
     if(event.keyCode ===83){
         playD4();
