@@ -151,108 +151,200 @@ export function playC6(keycode){
     }
 
 export function PlayNote(event){
+
     if(event.keyCode ===65){
-        alert('C4')
-        playC4("A");
+        
+        let a = localStorage.getItem("note")
+        let b =  playC4("A");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
 
     }
+
     if(event.keyCode ===87){
-        alert('Db4')
-        playDb4("W");
+
+        let a = localStorage.getItem("note")
+        let b =  playDb4("W");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
+
     }
+
     if(event.keyCode ===83){
-        alert('D4')
-        playD4("S");
+        let a = localStorage.getItem("note")
+        let b =  playD4("S");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===69){
-        alert('Eb4')
-        playEb4("E");
+        let a = localStorage.getItem("note")
+        let b =  playEb4("E");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===68){
-        alert('E4')
-        playE4("D");
+        let a = localStorage.getItem("note")
+        let b =  playE4("D");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===70){
-        alert('F4')
-        playF4("F");
+        let a = localStorage.getItem("note")
+        let b =  playF4("F");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===84){
-        alert('Gb4')
-        playGb4("T");
+        let a = localStorage.getItem("note")
+        let b =  playGb4("T");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===71){
-        alert('G4')
-        playG4("G");
+        let a = localStorage.getItem("note")
+        let b =  playG4("G");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===89){
-        alert('Ab4')
-        playAb4("Y");
+        let a = localStorage.getItem("note")
+        let b =  playAb4("Y");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===72){
-        alert('A4')
-        playA4("H");
+        let a = localStorage.getItem("note")
+        let b =  playA4("H");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===85){
-        alert('Bb4')
-        playBb4("U");
+        let a = localStorage.getItem("note")
+        let b =  playBb4("U");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===74){
-        alert('B4')
-        playB4("J");
+        let a = localStorage.getItem("note")
+        let b =  playB4("J");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
-
 
     if(event.keyCode ===75){
-        alert('C5')
-        playC5("K");
+        let a = localStorage.getItem("note")
+        let b =  playC5("K");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===79){
-        alert('Db5')
-        playDb5("O");
+        let a = localStorage.getItem("note")
+        let b =  playDb5("O");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===76){
-        alert('D5')
-        playD5("L");
+        let a = localStorage.getItem("note")
+        let b =  playD5("L");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===80){
-        alert('Eb5')
-        playEb5("P");
+        let a = localStorage.getItem("note")
+        let b =  playEb5("P");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===90){
-        alert('E5')
-        playE5("Z");
+        let a = localStorage.getItem("note")
+        let b =  playE5("Z");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===88){
-        alert('F5')
-        playF5("X");
+        let a = localStorage.getItem("note")
+        let b =  playF5("X");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===67){
-        alert('Gb5')
-        playGb5("C");
+        let a = localStorage.getItem("note")
+        let b =  playGb5("C");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===86){
-        alert('G5')
-        playG5("V");
+        let a = localStorage.getItem("note")
+        let b =  playG5("V");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===66){
-        alert('Ab5')
-        playAb5("B");
+        let a = localStorage.getItem("note")
+        let b =  playAb5("B");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===78){
-        alert('A5')
-        playA5("N");
+        let a = localStorage.getItem("note")
+        let b =  playA5("N");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===77){
-        alert('Bb5')
-        playBb5("M");
+        let a = localStorage.getItem("note")
+        let b =  playBb5("M");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===82){
-        alert('B5')
-        playB5("R");
+        let a = localStorage.getItem("note")
+        let b =  playB5("R");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===73){
-        alert('C6')
-        playC6("I");
+        let a = localStorage.getItem("note")
+        let b =  playC6("I");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
 
     

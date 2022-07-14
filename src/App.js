@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, {useState} from 'react';
 import {
@@ -33,20 +32,15 @@ import {
 
 window.addEventListener("keydown",PlayNote);
 function App(){
-  const [inputs, setInputs] =useState({})
-  const{username, password} = inputs;
 
-  const handleChange = (e) =>{
-      e.preventDefault()
-      const{value, name} = e.target;
-      setInputs({...inputs,[name]: value})
-  }
+
+  
 
   const clickC4 =(e)=>{
       e.preventDefault()
       
-      const C4 = playC4()
-      alert(`클릭되는 음 : ${C4}`)
+      playC4()
+      
   }
 
   const clickDb4 =(e)=>{
@@ -216,11 +210,17 @@ function App(){
     const C6 = playC6()
     alert(`클릭되는 음 : ${C6}`)
   }
+  const clickEnd =(e)=>{
+    e.preventDefault()
+    
+    localStorage.setItem('note', null)
+  }
     return(<div className='pianoPage'>
     <h1>Enjoy playing on the Tone Piano!</h1> <br/> <br/> <br/> <br/>
+    <button>녹음시작</button> <br/> <button onClick={clickEnd}>녹음 끝</button>
     <div className='piano'>
-    <div className='white-key' onClick={clickC4}>A</div>
-    <div className='black-key' onClick={clickDb4}>W</div>
+    <div className='white-key' name= 'note1' onClick={clickC4}>A</div>
+    <div className='black-key' name= 'note2' onClick={clickDb4}>W</div>
     <div className='white-key' onClick={clickD4}>S</div>
     <div className='black-key' onClick={clickEb4}>E</div>
     <div className='white-key' onClick={clickE4}>D</div>
@@ -245,9 +245,14 @@ function App(){
     <div className='black-key' onClick={clickBb5}>M</div>
     <div className='white-key' onClick={clickB5}>R</div>
     <div className='white-key' onClick={clickC6}>I</div>
-  
+    
     </div>
-    </div>)
+    
+    </div>
+
+    
+    
+    )
 }
 
 export default App;
