@@ -171,7 +171,7 @@ function App(){
   const clickGb5 =(e)=>{
     e.preventDefault()
     
-    const Gb5 = playB4()
+    const Gb5 = playGb5()
     alert(`클릭되는 음 : ${Gb5}`)
   }
 
@@ -199,21 +199,21 @@ function App(){
   const clickBb5 =(e)=>{
     e.preventDefault()
     
-    const Bb5 = playA5()
+    const Bb5 = playBb5()
     alert(`클릭되는 음 : ${Bb5}`)
   }
 
   const clickB5 =(e)=>{
     e.preventDefault()
     
-    const B5 = playA5()
+    const B5 = playB5()
     alert(`클릭되는 음 : ${B5}`)
   }
 
   const clickC6 =(e)=>{
     e.preventDefault()
     
-    const C6 = playA5()
+    const C6 = playC6()
     alert(`클릭되는 음 : ${C6}`)
   }
     return(<div className='pianoPage'>
