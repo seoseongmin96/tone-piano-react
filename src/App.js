@@ -216,42 +216,42 @@ function App(){
     localStorage.setItem('note', null)
   }
     return(<div className='pianoPage'>
+    <img src="https://ifh.cc/g/KtohFH.png" style={{width:110+"px"}}/>
+    
     <h1>Enjoy playing on the Tone Piano!</h1> <br/> <br/> <br/> <br/>
-    <button>녹음시작</button> <br/> <button onClick={clickEnd}>녹음 끝</button>
+    <button>녹음시작</button> <br/><br/> <button onClick={clickEnd}>녹음 끝</button><br/><br/>
     <div className='piano'>
     <div className='white-key' name= 'note1' onClick={clickC4}>A</div>
     <div className='black-key' name= 'note2' onClick={clickDb4}>W</div>
-    <div className='white-key' onClick={clickD4}>S</div>
-    <div className='black-key' onClick={clickEb4}>E</div>
-    <div className='white-key' onClick={clickE4}>D</div>
-    <div className='white-key' onClick={clickF4}>F</div>
-    <div className='black-key' onClick={clickGb4}>T</div>
-    <div className='white-key' onClick={clickG4}>G</div>
-    <div className='black-key' onClick={clickAb4}>Y</div>
-    <div className='white-key' onClick={clickA4}>H</div>
-    <div className='black-key' onClick={clickBb4}>U</div>
-    <div className='white-key' onClick={clickB4}>J</div>
+    <div className='white-key' name= 'nonte3' onClick={clickD4}>S</div>
+    <div className='black-key' name= 'nonte4' onClick={clickEb4}>E</div>
+    <div className='white-key' name= 'nonte5' onClick={clickE4}>D</div>
+    <div className='white-key' name= 'nonte6' onClick={clickF4}>F</div>
+    <div className='black-key' name= 'nonte7' onClick={clickGb4}>T</div>
+    <div className='white-key' name= 'nonte8' onClick={clickG4}>G</div>
+    <div className='black-key' name= 'nonte9' onClick={clickAb4}>Y</div>
+    <div className='white-key' name= 'note10' onClick={clickA4}>H</div>
+    <div className='black-key' name= 'note11' onClick={clickBb4}>U</div>
+    <div className='white-key' name= 'note12' onClick={clickB4}>J</div>
 
-    <div className='white-key' onClick={clickC5}>K</div>
-    <div className='black-key' onClick={clickDb5}>O</div>
-    <div className='white-key' onClick={clickD5}>L</div>
-    <div className='black-key' onClick={clickEb5}>P</div>
-    <div className='white-key' onClick={clickE5}>Z</div>
-    <div className='white-key' onClick={clickF5}>X</div>
-    <div className='black-key' onClick={clickGb5}>C</div>
-    <div className='white-key' onClick={clickG5}>V</div>
-    <div className='black-key' onClick={clickAb5}>B</div>
-    <div className='white-key' onClick={clickA5}>N</div>
-    <div className='black-key' onClick={clickBb5}>M</div>
-    <div className='white-key' onClick={clickB5}>R</div>
-    <div className='white-key' onClick={clickC6}>I</div>
+    <div className='white-key' name= 'note13' onClick={clickC5}>K</div>
+    <div className='black-key' name= 'note14' onClick={clickDb5}>O</div>
+    <div className='white-key' name= 'note15' onClick={clickD5}>L</div>
+    <div className='black-key' name= 'note16' onClick={clickEb5}>P</div>
+    <div className='white-key' name= 'note17' onClick={clickE5}>Z</div>
+    <div className='white-key' name= 'note18' onClick={clickF5}>X</div>
+    <div className='black-key' name= 'note19' onClick={clickGb5}>C</div>
+    <div className='white-key' name= 'note20' onClick={clickG5}>V</div>
+    <div className='black-key' name= 'note21' onClick={clickAb5}>B</div>
+    <div className='white-key' name= 'note22' onClick={clickA5}>N</div>
+    <div className='black-key' name= 'note23' onClick={clickBb5}>M</div>
+    <div className='white-key' name= 'note24' onClick={clickB5}>R</div>
+    <div className='white-key' name= 'note25' onClick={clickC6}>I</div>
     
     </div>
     
     </div>
 
-    
-    
     )
 }
 
