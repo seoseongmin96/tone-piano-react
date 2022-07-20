@@ -1,207 +1,350 @@
 import * as Tone from "tone"
 
-export function playC4(){
+export function playC4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C4","8n");
+   return keycode
     }
 
-export function playDb4(){
+export function playDb4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Db4","8n");
+    return keycode
     }
     
-export function playD4(){
+export function playD4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("D4","8n");
+    return keycode
     }   
     
-export function playEb4(){
+export function playEb4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Eb4","8n");
+    return keycode
     }   
 
-export function playE4(){
+export function playE4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("E4","8n");
+    return keycode
     }
     
-export function playF4(){
+export function playF4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("F4","8n");
+    return keycode
     }
         
-export function playGb4(){
+export function playGb4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Gb4","8n");
+    return keycode
     }
     
-export function playG4(){
+export function playG4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("G4","8n");
-    } 
+    return keycode
+   } 
     
-export function playAb4(){
+export function playAb4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Ab4","8n");
+    return keycode
     }
     
-export function playA4(){
+export function playA4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("A4","8n");
+    return keycode
     }
 
-export function playBb4(){
+export function playBb4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Bb4","8n");
+    return keycode
     }
         
-export function playB4(){
+export function playB4(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("B4","8n");
+    return keycode
     }
 
-export function playC5(){
+export function playC5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C5","8n");
+    return keycode
     }
     
-export function playDb5(){
+export function playDb5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Db5","8n");
+    return keycode
     }
     
-export function playD5(){
+export function playD5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("D5","8n");
+    return keycode
     }
         
-export function playEb5(){
+export function playEb5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Eb5","8n");
+    return keycode
     }
 
-export function playE5(){
+export function playE5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("E5","8n");
+    return keycode
     }
 
-export function playF5(){
+export function playF5(keycode){
      const synth = new Tone.Synth().toDestination();
      synth.triggerAttackRelease("F5","8n");
+     return keycode
     }
 
-export function playGb5(){
+export function playGb5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Gb5","8n");
+    return keycode
     }
 
-export function playG5(){
+export function playG5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("G5","8n");
+    return keycode
     }
 
-export function playAb5(){
+export function playAb5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Ab5","8n");
+    return keycode
     }
 
-export function playA5(){
+export function playA5(keycode){
     const synth = new Tone.Synth().toDestination();
      synth.triggerAttackRelease("A5","8n");
+     return keycode
     }
 
-export function playBb5(){
+export function playBb5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("Bb5","8n");
+    return keycode
     }
 
-export function playB5(){
+export function playB5(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("B5","8n");
+    return keycode
     }
 
-export function playC6(){
+export function playC6(keycode){
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C6","8n");
+    return keycode
     }
 
 export function PlayNote(event){
+
     if(event.keyCode ===65){
-        playC4();
+        
+        let a = localStorage.getItem("note")
+        let b =  playC4("A");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
+
     }
+
     if(event.keyCode ===87){
-        playDb4();
+
+        let a = localStorage.getItem("note")
+        let b =  playDb4("W");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
+
     }
+
     if(event.keyCode ===83){
-        playD4();
+        let a = localStorage.getItem("note")
+        let b =  playD4("S");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===69){
-        playEb4();
+        let a = localStorage.getItem("note")
+        let b =  playEb4("E");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===68){
-        playE4();
+        let a = localStorage.getItem("note")
+        let b =  playE4("D");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===70){
-        playF4();
+        let a = localStorage.getItem("note")
+        let b =  playF4("F");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===84){
-        playGb4();
+        let a = localStorage.getItem("note")
+        let b =  playGb4("T");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===71){
-        playG4();
+        let a = localStorage.getItem("note")
+        let b =  playG4("G");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===89){
-        playAb4();
+        let a = localStorage.getItem("note")
+        let b =  playAb4("Y");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===72){
-        playA4();
+        let a = localStorage.getItem("note")
+        let b =  playA4("H");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===85){
-        playBb4();
+        let a = localStorage.getItem("note")
+        let b =  playBb4("U");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
     if(event.keyCode ===74){
-        playB4();
+        let a = localStorage.getItem("note")
+        let b =  playB4("J");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
-
 
     if(event.keyCode ===75){
-        playC5();
+        let a = localStorage.getItem("note")
+        let b =  playC5("K");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===79){
-        playDb5();
+        let a = localStorage.getItem("note")
+        let b =  playDb5("O");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===76){
-        playD5();
+        let a = localStorage.getItem("note")
+        let b =  playD5("L");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===80){
-        playEb5();
+        let a = localStorage.getItem("note")
+        let b =  playEb5("P");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===90){
-        playE5();
+        let a = localStorage.getItem("note")
+        let b =  playE5("Z");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===88){
-        playF5();
+        let a = localStorage.getItem("note")
+        let b =  playF5("X");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===67){
-        playGb5();
+        let a = localStorage.getItem("note")
+        let b =  playGb5("C");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===86){
-        playG5();
+        let a = localStorage.getItem("note")
+        let b =  playG5("V");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===66){
-        playAb5();
+        let a = localStorage.getItem("note")
+        let b =  playAb5("B");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===78){
-        playA5();
+        let a = localStorage.getItem("note")
+        let b =  playA5("N");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===77){
-        playBb5();
+        let a = localStorage.getItem("note")
+        let b =  playBb5("M");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===82){
-        playB5();
+        let a = localStorage.getItem("note")
+        let b =  playB5("R");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
+
     if(event.keyCode ===73){
-        playC6();
+        let a = localStorage.getItem("note")
+        let b =  playC6("I");
+        let c = a + ','+b
+        alert('최종 저장된 값: '+ c)
+        localStorage.setItem("note", c)
     }
 
     
