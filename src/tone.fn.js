@@ -346,14 +346,4 @@ export function PlayNote(event){
         alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
-
-    
-
-
-}    
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 8f8ee22486135f0c4a3084ac8440d18e772b706d
+}
