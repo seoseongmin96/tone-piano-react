@@ -157,7 +157,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playC4("A");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
 
     }
@@ -167,7 +167,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playDb4("W");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
 
     }
@@ -176,70 +176,70 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playD4("S");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===69){
         let a = localStorage.getItem("note")
         let b =  playEb4("E");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===68){
         let a = localStorage.getItem("note")
         let b =  playE4("D");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===70){
         let a = localStorage.getItem("note")
         let b =  playF4("F");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===84){
         let a = localStorage.getItem("note")
         let b =  playGb4("T");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===71){
         let a = localStorage.getItem("note")
         let b =  playG4("G");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===89){
         let a = localStorage.getItem("note")
         let b =  playAb4("Y");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===72){
         let a = localStorage.getItem("note")
         let b =  playA4("H");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===85){
         let a = localStorage.getItem("note")
         let b =  playBb4("U");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
     if(event.keyCode ===74){
         let a = localStorage.getItem("note")
         let b =  playB4("J");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -247,7 +247,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playC5("K");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -255,7 +255,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playDb5("O");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -263,7 +263,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playD5("L");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -271,7 +271,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playEb5("P");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -279,7 +279,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playE5("Z");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -287,7 +287,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playF5("X");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -295,7 +295,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playGb5("C");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -303,7 +303,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playG5("V");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -311,7 +311,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playAb5("B");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -319,7 +319,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playA5("N");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -327,7 +327,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playBb5("M");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -335,7 +335,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playB5("R");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 
@@ -343,7 +343,7 @@ export function PlayNote(event){
         let a = localStorage.getItem("note")
         let b =  playC6("I");
         let c = a + ','+b
-        alert('최종 저장된 값: '+ c)
+        //alert('최종 저장된 값: '+ c)
         localStorage.setItem("note", c)
     }
 }

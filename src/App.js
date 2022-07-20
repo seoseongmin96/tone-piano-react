@@ -1,5 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
+import axios from 'axios';
+
 import {
   playC4,
   playDb4,
@@ -29,11 +31,26 @@ import {
   PlayNote
 } from "./tone.fn.js"
 
+const SERVER = 'http://localhost:3000/'
+const headers = {
+  "Content-Type": "application/json"
+}
+
+
 
 window.addEventListener("keydown",PlayNote);
 function App(){
 
+  const [saveNote, setSaveNote] = useState()
 
+  const tonePianoApi = async(saveNote) => {
+    try {
+      console.log(`API 진입`)
+      const response = await axios.post(`${SERVER}`, saveNote, {headers})
+    } catch (err) {
+      return err;
+    }
+  }
   
 
   const clickC4 =(e)=>{
@@ -211,26 +228,41 @@ function App(){
     const C6 = playC6()
     alert(`클릭되는 음 : ${C6}`)
   }
+
+  const clickStart = (e) => {
+    e.preventDefault()
+    localStorage.clear()
+  }
+
   const clickEnd =(e)=>{
     e.preventDefault()
-    
-    localStorage.setItem('note', null)
+    const finalNote = localStorage.getItem('note')
+    const arr = finalNote.split(',')
+    const arr2 = arr.slice(1)
+
+    tonePianoApi()
+    console.log({note : arr2})
+    setSaveNote({note : finalNote})
+    //axios.post(`${SERVER}`, saveNote, {headers})
+    localStorage.setItem('note',null)
   }
+
+  
     return(<div className='pianoPage'>
     <img src="https://ifh.cc/g/KtohFH.png" style={{width:110+"px"}}/>
     
     <h1>Enjoy playing on the Tone Piano!</h1> <br/> <br/> <br/> <br/>
-    <button>녹음시작</button> <br/><br/> <button onClick={clickEnd}>녹음 끝</button><br/><br/>
+    <button onClick={clickStart}>녹음시작</button> <br/><br/> <button onClick={clickEnd}>녹음 끝</button><br/><br/>
     <div className='piano'>
     <div className='white-key' name= 'note1' onClick={clickC4}>A</div>
     <div className='black-key' name= 'note2' onClick={clickDb4}>W</div>
-    <div className='white-key' name= 'nonte3' onClick={clickD4}>S</div>
-    <div className='black-key' name= 'nonte4' onClick={clickEb4}>E</div>
-    <div className='white-key' name= 'nonte5' onClick={clickE4}>D</div>
-    <div className='white-key' name= 'nonte6' onClick={clickF4}>F</div>
-    <div className='black-key' name= 'nonte7' onClick={clickGb4}>T</div>
-    <div className='white-key' name= 'nonte8' onClick={clickG4}>G</div>
-    <div className='black-key' name= 'nonte9' onClick={clickAb4}>Y</div>
+    <div className='white-key' name= 'note3' onClick={clickD4}>S</div>
+    <div className='black-key' name= 'note4' onClick={clickEb4}>E</div>
+    <div className='white-key' name= 'note5' onClick={clickE4}>D</div>
+    <div className='white-key' name= 'note6' onClick={clickF4}>F</div>
+    <div className='black-key' name= 'note7' onClick={clickGb4}>T</div>
+    <div className='white-key' name= 'note8' onClick={clickG4}>G</div>
+    <div className='black-key' name= 'note9' onClick={clickAb4}>Y</div>
     <div className='white-key' name= 'note10' onClick={clickA4}>H</div>
     <div className='black-key' name= 'note11' onClick={clickBb4}>U</div>
     <div className='white-key' name= 'note12' onClick={clickB4}>J</div>
